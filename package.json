@@ -1,0 +1,31 @@
+{
+    "name": "test",
+    "version": "1.0.0",
+    "private": true,
+    "packageManager": "yarn@4.3.1",
+    "scripts": {
+        "build:preprod:service-openapi": "yarn workspace service-openapi build:preprod",
+        "start:service-openapi": "yarn workspace service-openapi start"
+    },
+    "workspaces": [
+        "service-*/*"
+    ],
+    "devDependencies": {
+        "@babel/core": "^7.24.7",
+        "@babel/eslint-parser": "^7.24.7",
+        "@babel/preset-react": "^7.24.7",
+        "@tanstack/eslint-plugin-query": "^5.47.0",
+        "eslint": "8.57.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-import-resolver-node": "^0.3.9",
+        "eslint-plugin-import": "^2.29.1",
+        "eslint-plugin-jest": "^27.9.0",
+        "eslint-plugin-jsx-a11y": "^6.8.0",
+        "eslint-plugin-prettier": "^5.1.3",
+        "eslint-plugin-react": "^7.34.0",
+        "eslint-plugin-react-hooks": "^4.6.0",
+        "eslint-plugin-testing-library": "^6.2.0",
+        "prettier": "3.2.5"
+    }
+}
